@@ -44,4 +44,12 @@
 
     <script>
         // JavaScript to toggle between the signup and data entry sections
-        document.getElementById
+        document.getElementById("signup-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Hide the signup section and show the data entry section
+            document.getElementById("signup-section").style.display = "none";
+            document.getElementById("data-entry-section").style.display = "block";
+        });
+    </script>
+</body>
+</html>
